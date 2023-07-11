@@ -6,5 +6,6 @@ class Clothing : public Product
 	string color;
 public:
 	Clothing(string name, double price, int amount, string size, string color) : Product{ name, price, amount }, size{ size }, color{ color } {};
+	void placeOrder(int amount);
 };
 

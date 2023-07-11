@@ -9,5 +9,6 @@ protected:
 	int amount;
 public:
 	Product(string name, double price, int amount) : name{ name }, price{ price }, amount{ amount } {};
+	virtual void placeOrder(int amount) = 0;
 };
 
